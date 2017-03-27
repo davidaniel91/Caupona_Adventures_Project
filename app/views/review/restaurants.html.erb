@@ -1,0 +1,13 @@
+<h1>Restaurants</h1>
+
+<%= @review.each do |f| %> 
+    <%= f.title %>
+    <!-- Implement multiple reviews later (depending on what "text"
+    will be)-->
+    <% f.text %>
+    <!-- This might be where the picture goes later. f.picture possibly.
+        CSS might be used for the pictures.-->
+    <%= link_to 'show', show_review_path  %>
+    <%= link_to 'update', edit_review_path %>
+    <!-->This is also a way to do a comment. Use !-- then enter tab. </!-->
+<%= end %>

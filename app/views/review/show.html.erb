@@ -1,9 +1,10 @@
 <p>
     <strong>title</strong>
-    <%= review.title %>
+    <%= @review.title %>
 </p>
 
 <p>
     <strong>text</strong>
-    <%= review.text %>
+    <%= @review.text %>
 </p>
+<%= link_to 'Restaurant List', review_path %>
