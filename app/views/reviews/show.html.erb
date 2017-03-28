@@ -7,4 +7,9 @@
     <strong>text</strong>
     <%= @review.text %>
 </p>
-<%= link_to 'Restaurant List', review_path %>
+<p>
+    <strong>rating</strong>
+    <%=@review.rating %>
+</p>
+
+<%= link_to 'Back', reviews_path %>
