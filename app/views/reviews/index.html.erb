@@ -1,14 +1,16 @@
 <h1>Listing reviews</h1>
+ <div id = "test4">
  <%= link_to 'New review', new_review_path %>
+ </div>
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th>Rating</th>
+    <th id="test1">Resturant</th>
+    <th id="test2">Review</th>
+    <th id="test7">Rating</th>
   </tr>
  
   <% @reviews.each do |review| %>
-    <tr>
+    <tr id="test3">
       <td><%= review.title %></td>
       <td><%= review.text %></td>
       <td><%= review.rating %></td>
@@ -18,3 +20,7 @@
     </tr>
   <% end %>
 </table>
+
+<div id = "b3">
+<%= link_to 'Back', welcome_index_path %>
+</div>

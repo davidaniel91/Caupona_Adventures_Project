@@ -1,15 +1,17 @@
 <p>
-    <strong>title</strong>
+    <strong id = "r1">Resturant</strong><br>
     <%= @review.title %>
 </p>
 
 <p>
-    <strong>text</strong>
+    <strong id = "r2">Review</strong><br>
     <%= @review.text %>
 </p>
 <p>
-    <strong>rating</strong>
+    <strong id = "r3">rating</strong><br>
     <%=@review.rating %>
 </p>
 
+<div id = "b2">
 <%= link_to 'Back', reviews_path %>
+</div>

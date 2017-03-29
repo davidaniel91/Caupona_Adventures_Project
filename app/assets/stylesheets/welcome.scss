@@ -1,14 +1,150 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body
-{
-    background: lightbluesteel;
+body {
+    background-image: url("https://static.pexels.com/photos/213661/pexels-photo-213661.jpeg");
+    background-size: cover;
+    margin: 10 auto;
+    //background-color: white;
 }
+
 h1 {
-    color: red;
+    //This changes the font and color of the h1 header one in the application
+    //play around with different styles and colors
+    font: 48px Helvetica, Arial, sans-serif;
+    font-size: 300%;
+    color: #0884EB;
+     text-shadow: 2px 2px 4px #000000
 }
+
+h2 {
+    font: 48px Helvetica, Arial, sans-serif;
+    font-size: 225%;
+    color: #FE7B10;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test1 {
+    color: #EB0104;
+    font: 32px Helvetica, Arial, sans-serif;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test2 {
+    color: #EB0104;
+    font: 32px Helvetica, Arial, sans-serif;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test3 {
+    color: #1FCC01;
+    font: 18px Helvetica, Arial, sans-serif;
+    padding-top: 25px;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test4 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #FEE900;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test5 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #F89A00;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test6 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #F89A00;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test7 {
+    color: #EB0104;
+    font: 32px Helvetica, Arial, sans-serif;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test8 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#b1 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#b2 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#b3 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D;
+    text-shadow: 2px 2px 4px #000000
+}
+
+p {
+    font: 32px Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #D3090C;
+     text-shadow: 2px 2px 4px #000000
+}
+
+iframe {
+    padding: 50px;
+    padding-top: 25px;
+}
+
+#box {
+    padding: 150px;
+}
+
 textarea {
-    background-color: black;
-    color: green;
+    width: 25%;
+    height: 300px;
+    padding: 12 px 12 px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    background-color: #76e6ff;
+    resize: none;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 12 px 12 px;
+    border: 2px solid #ccc;
+    background-color: #76e6ff;
+}
+
+input[type=button], input[type=submit] {
+    background-color: white;
+    border: 2px solid #008CBA;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+input[type=button], input[type=submit]:hover {
+    background-color: #008CBA;
+    color: white;
 }
