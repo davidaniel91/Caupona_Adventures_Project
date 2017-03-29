@@ -8,7 +8,7 @@
     <th id="test2">Review</th>
     <th id="test7">Rating</th>
   </tr>
- 
+  <% if false %>
   <% @reviews.each do |review| %>
     <tr id="test3">
       <td><%= review.title %></td>
@@ -19,8 +19,13 @@
         
     </tr>
   <% end %>
+  <% end %>
 </table>
 
 <div id = "b3">
 <%= link_to 'Back', welcome_index_path %>
 </div>
+
+<footer>
+    &copy; Copyright 2017, Caupona Adventures (Group 9)
+</footer>
