@@ -8,10 +8,14 @@ body {
     background-color: grey;
 }
 
-img.resize{
-   max-width:50%;
-   max-height:50%;
+img{
+    position: center;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
 }
+
 
 h1 {
     //This changes the font and color of the h1 header one in the application
@@ -31,8 +35,9 @@ h2 {
 
 footer {
     padding-top: 10px;
-    display: flex;
-    justify: flex-end;
+    position:absolute;
+    bottom:0;
+    right:0;
     font: "Times New Roman", Arial, sans-serif;
 }
 
