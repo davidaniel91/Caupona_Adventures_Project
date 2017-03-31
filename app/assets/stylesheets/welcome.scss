@@ -5,7 +5,7 @@ body {
     //background-image: url("https://static.pexels.com/photos/213661/pexels-photo-213661.jpeg");
     //background-size: cover;
     //margin: 10 auto;
-    background-color: grey;
+    background-color: #bdc7cc; //
 }
 
 img{
@@ -22,14 +22,14 @@ h1 {
     //play around with different styles and colors
     font: 48px Helvetica, Arial, sans-serif;
     font-size: 300%;
-    color: #0884EB;
+    color: #0884EB; //#B42E2E -> dark red 
     text-shadow: 2px 2px 4px #000000
 }
 
 h2 {
     font: 48px Helvetica, Arial, sans-serif;
     font-size: 225%;
-    color: #FE7B10;
+    color: #FE7B10; //#4EB12E green #21920F; lighter green OR #730D76 -> purple
      text-shadow: 2px 2px 4px #000000
 }
 
@@ -42,13 +42,13 @@ footer {
 }
 
 #test1 {
-    color: #EB0104;
+    color: #EB0104; //#4EB12E; green OR #21920F; lighter green
     font: 32px Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #000000
 }
 
 #test2 {
-    color: #EB0104;
+    color: #EB0104; //#4EB12E green OR #21920F; lighter green
     font: 32px Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #000000
 }
@@ -98,7 +98,7 @@ footer {
 #b1 a {
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #00F80D;
+    color: #00F80D; 
     text-shadow: 2px 2px 4px #000000
 }
 
@@ -172,5 +172,5 @@ input[type=button], input[type=submit]:hover {
 }
 
 a:visited {
-    color:#7ae8c3 ;
+    color:#84e1e8 ;
 }
