@@ -4,8 +4,10 @@
 body {
     //background-image: url("https://static.pexels.com/photos/213661/pexels-photo-213661.jpeg");
     //background-size: cover;
+    //Another possible cover: 
+    //background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
     //margin: 10 auto;
-    background-color: #bdc7cc; //
+    background-color: #A9A9A9; 
 }
 
 img{
@@ -22,20 +24,20 @@ h1 {
     //play around with different styles and colors
     font: 48px Helvetica, Arial, sans-serif;
     font-size: 300%;
-    color: #0884EB; //#B42E2E -> dark red 
+    color: #B42E2E; //#B42E2E -> dark red 
     text-shadow: 2px 2px 4px #000000
 }
 
 h2 {
     font: 48px Helvetica, Arial, sans-serif;
     font-size: 225%;
-    color: #FE7B10; //#4EB12E green #21920F; lighter green OR #730D76 -> purple
+    color: #4EB12E; //#4EB12E green #21920F; lighter green OR #730D76 -> purple
      text-shadow: 2px 2px 4px #000000
 }
 
 footer {
     padding-top: 10px;
-    position:absolute;
+    position:absolute; //#A9A9A9 -> grey OR #F0FFFF -> white
     bottom:0;
     right:0;
     font: "Times New Roman", Arial, sans-serif;
@@ -63,9 +65,9 @@ footer {
 #test4 {
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #fffb4f;
+    color: #B42E2E; 
      text-align: center;
-     text-shadow: 2px 2px 4px #000000
+     text-shadow: 1px 1px 2px #000000
 }
 
 #test5 a {
@@ -121,7 +123,7 @@ p {
     font-size: 150%;
     color: #D3090C;
      text-align: center;
-     text-shadow: 2px 2px 4px #000000
+     text-shadow: 1px 1px 3px #000000
 }
 
 iframe {
@@ -172,5 +174,5 @@ input[type=button], input[type=submit]:hover {
 }
 
 a:visited {
-    color:#84e1e8 ;
+    color:#21920F ;
 }
