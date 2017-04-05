@@ -1,19 +1,19 @@
 <p>
     <strong id = "r1">Restaurant</strong><br>
-    <%= @review.title %>
+    <%= @restaurant.Restaurant %>
 </p>
 
 <p>
-    <strong id = "r2">Review</strong><br>
-    <%= @review.text %>
+    <strong id = "r2">description</strong><br>
+    <%= @restaurant.description %>
 </p>
 <p>
     <strong id = "r3">rating</strong><br>
-    <%=@review.rating %>
+    <%=@restaurant.rating %>
 </p>
 
 <div id = "b2">
-<%= link_to 'Back', reviews_path %>
+<%= link_to 'Back', restaurants_path %>
 </div>
 
 <footer>

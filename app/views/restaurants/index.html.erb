@@ -1,0 +1,30 @@
+<h1>Listing restaurants</h1>
+ <div id = "test4">
+ <%= link_to 'New restaurant', new_restaurant_path %>
+ </div>
+<table>
+  <tr>
+    <th id="test1">Restaurant</th>
+    <th id="test2">Description</th>
+    <th id="test7">Rating</th>
+  </tr>
+  
+  <% @restaurants.each do |restaurant| %>
+    <tr id="test3">
+      <td><%= restaurant.Restaurant %></td>
+      <td><%= restaurant.description %></td>
+      <td><%= restaurant.rating %></td>
+      <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
+      <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+        
+    </tr>
+  <% end %>
+</table>
+
+<div id = "b3">
+<%= link_to 'Back', welcome_index_path %>
+</div>
+
+<footer>
+    &copy; Copyright 2017, Caupona Adventures (Group 9)
+</footer>
