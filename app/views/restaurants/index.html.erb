@@ -1,3 +1,8 @@
+<head>
+  <title>Restaurants</title>
+  <meta charset="UTF-8">
+</head>
+
 <h1>Listing restaurants</h1>
  <div id = "test4">
  <%= link_to 'New restaurant', new_restaurant_path %>
@@ -5,18 +10,18 @@
 <table>
   <tr>
     <th id="test1">Restaurant</th>
-    <th id="test2">Description</th>
-    <th id="test7">Rating</th>
+    <th id="test2">Location</th>
+    <th id="test7">Description</th>
   </tr>
   
   <% @restaurants.each do |restaurant| %>
     <tr id="test3">
-      <td><%= restaurant.Restaurant %></td>
-      <td><%= restaurant.description %></td>
-      <td><%= restaurant.rating %></td>
-      <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
+      <td><%= restaurant.name %></td>
+      <td><%= restaurant.location %></td>
+      <td><%= restaurant.description%></td>
+      <td><%= link_to 'Reviews', restaurant_path(restaurant) %></td>
       <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-        
+</td>
     </tr>
   <% end %>
 </table>

@@ -1,6 +1,13 @@
+<header>
+    <title>Restaurants</title>
+    <%= link_to 'Home', welcome_index_path %> |
+	<%= link_to 'Restaurants', restaurant_index_path %>
+	<meta charset="UTF-8">
+</header>
+
 <h1>Restaurants</h1>
 
-<%= @review.each do |f| %> 
+<%= @review.each do |f| %>
     <%= f.title %>
     <!-- Implement multiple reviews later (depending on what "text"
     will be)-->

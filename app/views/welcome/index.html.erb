@@ -6,13 +6,21 @@
 
 <header>
     <h2>Number 9 Large</h2>
+    <ul>
+	<li><%= link_to 'Home', welcome_index_path %> </li>
+	<li><%= link_to 'Restaurants', restaurants_path %></li>
+	<li><%= link_to 'List of all Restaurants',controller: 'restaurants' %></li>
+	</ul>
 </header>
 
-<h1 id="center">Caupona Adventures</h1>
-<div id = "test4">
-<test4><%= link_to 'List of all Restaurants',controller: 'restaurants' %></test4>
-</div>
+<table border = "1">
+  <tr>
+  <th><h1 id="center">Caupona Adventures</h1></th>
+  </tr>
+</table>
 
+
+<div id ="boxTest"> 
 <p>
     <strong>Preview Review</strong><br>
     
@@ -25,9 +33,11 @@
     fish tank with exotic fish!<br>
     <strong>Rating:</strong> 4.5
 </p>
+</div>
 
 
 <footer>
     &copy; Copyright 2017, Caupona Adventures (Group 9)
 </footer>
+
 <!-- This is how you write a comment in HTML. -->
