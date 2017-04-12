@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
 </head>
 
+<h1>Caupona Adventures</h1>
 <h1>Listing restaurants</h1>
  <div class = "restaurant">
  <%= link_to 'New restaurant', new_restaurant_path %>
@@ -14,12 +15,20 @@
     <th id="test7">Description</th>
   </tr>
   
+  <header>
+  <h2>Number 9 large</h2>
+  <ul>
+	<li><%= link_to 'Home', welcome_index_path %> </li>
+	</ul>
+  </header>
+  
   <% @restaurants.each do |restaurant| %>
     <tr id="test3">
       <td><%= link_to restaurant.name, restaurant_path(restaurant) %></td>
       <td><%= restaurant.location %></td>
       <td><%= restaurant.description%></td>
       <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+      <td><%= link_to 'Destroy', restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </td>
     </tr>
   <% end %>

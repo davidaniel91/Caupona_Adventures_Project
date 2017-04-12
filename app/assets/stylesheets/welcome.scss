@@ -1,6 +1,11 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    border: 1px solid black;
+    margin: 5px;
+}
+
 body {
     //background-image: url("https://static.pexels.com/photos/213661/pexels-photo-213661.jpeg");
     //background-size: cover;
