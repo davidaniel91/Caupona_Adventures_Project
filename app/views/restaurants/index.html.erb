@@ -4,22 +4,21 @@
 </head>
 
 <h1>Listing restaurants</h1>
- <div id = "test4">
+ <div class = "restaurant">
  <%= link_to 'New restaurant', new_restaurant_path %>
  </div>
 <table>
   <tr>
-    <th id="test1">Restaurant</th>
-    <th id="test2">Location</th>
+    <th id="test1">Restaurant</th><br>
+    <br><th id="test2">Location</th>
     <th id="test7">Description</th>
   </tr>
   
   <% @restaurants.each do |restaurant| %>
     <tr id="test3">
-      <td><%= restaurant.name %></td>
+      <td><%= link_to restaurant.name, restaurant_path(restaurant) %></td>
       <td><%= restaurant.location %></td>
       <td><%= restaurant.description%></td>
-      <td><%= link_to 'Reviews', restaurant_path(restaurant) %></td>
       <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
 </td>
     </tr>
