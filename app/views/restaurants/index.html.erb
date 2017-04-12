@@ -3,38 +3,34 @@
   <meta charset="UTF-8">
 </head>
 
-<h1>Caupona Adventures</h1>
+<h1 id = "name"><%= link_to 'Caupona Adventures', welcome_index_path %></h1><br>
 <h1>Listing restaurants</h1>
  <div class = "restaurant">
- <%= link_to 'New restaurant', new_restaurant_path %>
+ <ul>
+ <li><%= link_to 'New restaurant', new_restaurant_path %></li>
+ </ul>
  </div>
 <table>
   <tr>
-    <th id="test1">Restaurant</th><br>
-    <br><th id="test2">Location</th>
-    <th id="test7">Description</th>
+    <th class = "restaurant">Restaurant</th><br>
+    <br><th class = "restaurant">Location</th>
+    <th class = "restaurant">Description</th>
   </tr>
   
-  <header>
-  <h2>Number 9 large</h2>
-  <ul>
-	<li><%= link_to 'Home', welcome_index_path %> </li>
-	</ul>
-  </header>
   
   <% @restaurants.each do |restaurant| %>
-    <tr id="test3">
+    <tr class = "listing">
       <td><%= link_to restaurant.name, restaurant_path(restaurant) %></td>
       <td><%= restaurant.location %></td>
       <td><%= restaurant.description%></td>
       <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-      <td><%= link_to 'Destroy', restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</td>
+      <td><%= link_to 'Destroy', restaurant_path(restaurant), method: :delete, 
+      data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
 
-<div id = "b3">
+<div>
 <%= link_to 'Back', welcome_index_path %>
 </div>
 

@@ -9,6 +9,74 @@
 </header>
 
 <p>
+    <strong>Restaurant</strong><br>
+    <%= @restaurant.name %>
+</p>
+
+<p>
+    <strong>Description</strong><br>
+    <%= @restaurant.description %>
+</p>
+
+
+<p>
+    <strong>Location</strong><br>
+    <%=@restaurant.location %>
+</p>
+
+<h2>Reviews</h2>
+<% @restaurant.reviews.each do |review| %>
+<p>
+    <strong>Commenter:</strong>
+    <%= review.commenter %>
+</p>
+
+<p>
+    <strong>Review:</strong>
+    <%= review.review %>
+</p>
+<p>
+    <strong>Rating:</strong>
+    <%= review.rating %>
+</p>
+<% end %>
+
+<h2>Add a review:</h2>
+<%= form_for([@restaurant, @restaurant.reviews.build]) do |f| %>
+<p>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
+</p>
+<p>
+    <%= f.label :rating %><br>
+    <%= f.text_field :rating %>
+</p>
+<p>
+    <%= f.label :review %><br>
+    <%= f.text_area :review %>
+</p>
+<p>
+    <%= f.submit %>
+</p>
+<% end %>
+
+<div id = "b2">
+<%= link_to 'Back', restaurants_path %>
+</div>
+
+<footer>
+    &copy; Copyright 2017, Caupona Adventures (Group 9)
+</footer>
+<header>
+    <title>Your Restaurant Pick</title>
+    <p>
+        <%= link_to 'Home', welcome_index_path %> |
+	    <%= link_to 'Restaurants', restaurants_path %>
+    </p>
+	<meta charset="UTF-8">
+</header>
+
+<p>
     <strong id = "r1">Restaurant</strong><br>
     <%= @restaurant.name %>
 </p>

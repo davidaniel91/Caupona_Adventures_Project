@@ -20,8 +20,10 @@ body {
 //     border: 25px solid green;
 //     padding: 25px;
 //     margin: 25px;
-//     position: center;     
+//     position: center;
+//     color: #F0E68C;       
 // }
+
 
 img{
     position: center;
@@ -29,6 +31,27 @@ img{
     width: auto;
     max-width: 300px; 
     max-height: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: hotpink;
+}
+
+h1 a:link {
+    color: red;
+}
+
+h1 a:visited {
+    color: blue;
+}
+
+h1 a:hover {
+    color: hotpink;
+}
+
+h1 a:active {
+    color: blue;
 }
 
 
@@ -60,6 +83,8 @@ h1.oblique {
 }
 
 
+
+
 h2 {
     font: 48px Helvetica, Arial, sans-serif;
     font-size: 150%;
@@ -80,7 +105,21 @@ footer {
     font: "Times New Roman", Arial, sans-serif;
 }
 
+.restaurant {
+    color: #4EB12E; //#EB0104; OR #21920F; lighter green
+    font: 32px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000
+    
+}
+
+.listing {
+    color: #4EB12E; //#EB0104; OR #21920F; lighter green
+    font: 24px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000
+}
+
 //second page
+
 #test1 {
     color: #4EB12E; //#EB0104; OR #21920F; lighter green
     font: 32px Helvetica, Arial, sans-serif;
