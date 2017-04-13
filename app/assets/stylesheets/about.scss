@@ -1,3 +1,255 @@
-// Place all the styles related to the about controller here.
+// Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+body {
+    //background-image: url("https://static.pexels.com/photos/213661/pexels-photo-213661.jpeg");
+    //background-size: cover;
+    //Another possible cover: 
+    //background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
+    //margin: 10 auto;
+    background-color: #A9A9A9; //#00ff40; 
+}
+
+// #boxTest {
+//     width: 300px;
+//     border: 25px solid green;
+//     padding: 25px;
+//     margin: 25px;
+//     position: center;
+//     color: #F0E68C;       
+// }
+
+
+img{
+    position: center;
+    height: auto;
+    width: auto;
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: hotpink;
+}
+
+h1 a:link {
+    color: red;
+}
+
+h1 a:visited {
+    color: blue;
+}
+
+h1 a:hover {
+    color: hotpink;
+}
+
+h1 a:active {
+    color: blue;
+}
+
+
+h1 {
+    //This changes the font and color of the h1 header one in the application
+    //play around with different styles and colors
+    font: 48px Helvetica, Arial, sans-serif;
+    font-family: Copperplate , Lucida Console;
+    font-size: 300%;
+    color:  #F0E68C; //#B42E2E; //#00ff40; //#00ff40;
+    text-shadow: 2px 2px 4px #000000
+    
+}
+
+center{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    
+}
+
+h1.solid{
+    border-style: solid;
+    color: #B42E2E;
+}
+
+h1.oblique {
+    font-style: oblique;
+}
+
+
+
+
+h2 {
+    font: 48px Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #730D76; //#4EB12E green #21920F; lighter green OR #730D76 -> purple
+    text-shadow: 2px 2px 4px #000000
+}
+
+h2.oblique{
+    font-style: oblique;
+}
+
+footer {
+    padding-top: 10px;
+    position:absolute; 
+    color: #F0FFFF;//#A9A9A9 -> grey OR -> white
+    bottom:0;
+    right:0;
+    font: "Times New Roman", Arial, sans-serif;
+}
+
+.restaurant {
+    color: #4EB12E; //#EB0104; OR #21920F; lighter green
+    font: 32px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000
+    
+}
+
+.listing {
+    color: #4EB12E; //#EB0104; OR #21920F; lighter green
+    font: 24px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000
+}
+
+//second page
+
+#test1 {
+    color: #4EB12E; //#EB0104; OR #21920F; lighter green
+    font: 32px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#test2 {
+    color: #4EB12E; //#EB0104; green OR #21920F; lighter green
+    font: 32px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#test3 {
+    color: #4EB12E; //#1FCC01;
+    font: 18px Helvetica, Arial, sans-serif;
+    padding-top: 25px;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#test4 {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #4EB12E; //#B42E2E; 
+     text-align: center;
+     text-shadow: 1px 1px 2px #000000
+}
+
+#test5 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #4EB12E; //#F89A00;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test6 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #F89A00;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test7 {
+    color: #EB0104;
+    font: 32px Helvetica, Arial, sans-serif;
+     text-shadow: 2px 2px 4px #000000
+}
+
+#test8 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#b1 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D; 
+    text-shadow: 2px 2px 4px #000000
+}
+
+#b2 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#b3 a {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #00F80D;
+    text-shadow: 2px 2px 4px #000000
+}
+
+p {
+    font: 32px Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #D3090C;
+     text-align: center;
+     text-shadow: 1px 1px 3px #000000
+}
+
+iframe {
+    padding: 50px;
+    padding-top: 25px;
+}
+
+#box {
+    padding: 150px;
+}
+
+textarea {
+    width: 25%;
+    height: 300px;
+    padding: 12 px 12 px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    background-color: #76e6ff;
+    resize: none;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 12 px 12 px;
+    border: 2px solid #ccc;
+    background-color: #76e6ff;
+}
+
+input[type=button], input[type=submit] {
+    background-color: white;
+    border: 2px solid #008CBA;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+input[type=button], input[type=submit]:hover {
+    background-color: #008CBA;
+    color: white;
+}
+#center {
+    text-align: center;
+}
+
+a:visited {
+    color:#21920F ;
+}
