@@ -1,18 +1,18 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-* {
-    border: 1px solid black;
-    margin: 5px;
-}
+// * {
+//     border: 1px solid black;
+//     margin: 5px;
+// }
 
 body {
     //background-image: url("https://static.pexels.com/photos/213661/pexels-photo-213661.jpeg");
     //background-size: cover;
     //Another possible cover: 
-    //background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
     //margin: 10 auto;
-    background-color: #A9A9A9; //#00ff40; 
+    background-color: #A9A9A9; //#00ff40; //#FF69B4
 }
 
 // #boxTest {
@@ -88,7 +88,7 @@ h1.oblique {
 h2 {
     font: 48px Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #730D76; //#4EB12E green #21920F; lighter green OR #730D76 -> purple
+    color: #F0E68C; //#730D76; //#4EB12E green #21920F; lighter green OR #730D76 -> purple
     text-shadow: 2px 2px 4px #000000
 }
 
@@ -106,14 +106,14 @@ footer {
 }
 
 .restaurant {
-    color: #4EB12E; //#EB0104; OR #21920F; lighter green
+    color: #F0E68C; //#4EB12E; //#EB0104; OR #21920F; lighter green
     font: 32px Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #000000
     
 }
 
 .listing {
-    color: #4EB12E; //#EB0104; OR #21920F; lighter green
+    color: #F0E68C; //#4EB12E; //#EB0104; OR #21920F; lighter green
     font: 24px Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #000000
 }
@@ -150,7 +150,7 @@ footer {
 #test5 a {
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #4EB12E; //#F89A00;
+    color: #F0E68C; //#4EB12E; //#F89A00;
      text-shadow: 2px 2px 4px #000000
 }
 
@@ -162,7 +162,7 @@ footer {
 }
 
 #test7 {
-    color: #EB0104;
+    color: #EB0104; //red
     font: 32px Helvetica, Arial, sans-serif;
      text-shadow: 2px 2px 4px #000000
 }
@@ -177,7 +177,7 @@ footer {
 #b1 a {
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #00F80D; 
+    color: #00F80D; //green
     text-shadow: 2px 2px 4px #000000
 }
 
