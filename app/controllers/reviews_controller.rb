@@ -6,24 +6,17 @@ class ReviewsController < ApplicationController
         @restaurant = Restaurant.find(params[:restaurant_id])
         @review = @restaurant.reviews.create(review_params)
         redirect_to restaurant_path(@restaurant)
-        
-        if @review.save
-            redirect_to restaurant_path(@review)
-        else
-            render 'new'
-        end
+       
     end
     
     
     def destroy
-        @review = Review.find(params[:id])
+        @review = Review.find(params[:review_id])
         @review.destroy
         redirect_to restaurants_path
     end
     
-    def destroy_comment
-        
-    end
+    
     
     def edit
         @review = Review.find(params[:restaurant_id])

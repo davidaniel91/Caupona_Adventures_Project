@@ -59,3 +59,13 @@ title{
  .link a:hover {
     color: hotpink;
 }
+
+
+footer {
+    padding-top: 10px;
+    position:absolute; 
+    color: #F0FFFF;//#A9A9A9 -> grey OR -> white
+    bottom:0;
+    right:0;
+    font: "Times New Roman", Arial, sans-serif;
+}
