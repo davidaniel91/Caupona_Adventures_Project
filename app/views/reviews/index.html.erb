@@ -10,3 +10,17 @@
 	<%= link_to 'Home', welcome_index_path %> |
 	<%= link_to 'Restaurants', restaurants_path %>
 </header>
+
+<table>
+    <tr>
+        <th>Commenter</th>
+        <th>Review</th>
+        <th>Rating</th>
+    </tr>
+<% @review.each do |review| %>
+<tr>
+    <td><%= link_to 'Edit', edit_restaurant_review_path(review) %></td>
+</tr>
+
+<% end %>
+</table>

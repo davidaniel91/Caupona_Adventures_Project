@@ -5,6 +5,7 @@
 body {
     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
     //margin: 10 auto;
+    
     background-color: #A9A9A9; //#00ff40; //#FF69B4
 }
 
@@ -12,6 +13,26 @@ h1 {
     font: 48px Helvetica, Arial, sans-serif;
     font-family: Copperplate , Lucida Console;
     font-size: 300%;
+    color:  #F0E68C;  //#00ff40; //#00ff40;
+    text-shadow: 2px 2px 4px #000000
+}
+
+.name1{
+    font: 32px Helvetica, Arial, sans-serif;
+    font-family: Copperplate , Lucida Console;
+    font-size: 100%;
+    color: #F0E68C;
+    text-shadow: 2px 2px 4px #000000
+}
+
+h1 a:hover {
+    color: hotpink;
+}
+
+h3 {
+    font: 42px Helvetica, Arial, sans-serif;
+    font-family: Copperplate , Lucida Console;
+    font-size: 200%;
     color:  #F0E68C; //#B42E2E; //#00ff40; //#00ff40;
     text-shadow: 2px 2px 4px #000000
 }
@@ -23,13 +44,18 @@ title{
     
 }
 
-
 .about {
-    color: #F0E68C;
-    font: 24px Helvetica, Arial, sans-serif;
+    color: #F0E68C; 
+    font: 16px Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #000000 
 }
 
- .about a:hover {
+.link{
+    color: #F0E68C; 
+    font: 16px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000 
+}
+
+ .link a:hover {
     color: hotpink;
 }

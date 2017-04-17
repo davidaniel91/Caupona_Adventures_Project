@@ -13,7 +13,7 @@ div.restaurant {
 
 table,th,td {
     border: 1px solid black;
-    text-align: center;
+    background-color:#948C85;
 }
 
 table {
@@ -24,31 +24,52 @@ th {
     height: 50px;
 }
 
-#r1 {
-    //background-image: url("http://payload.cargocollective.com/1/0/1735/12787/Walls_1.jpg");
-    //background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
-    color: #FF69B4; //#1FCC01;
-    font: 36px Helvetica, Arial, sans-serif;
-    padding-top: 25px;
-}
-
-#r2 {
-    color: #FF69B4; //#F89A00;
-    font: 36px Helvetica, Arial, sans-serif;
-    padding-top: 25px;
-}
-
-#r3 {
-    color: #FF69B4; //#00BE89;
-    font: 36px Helvetica, Arial, sans-serif;
-    padding-top: 25px;
-}
-
 p {
     font: 32px Helvetica, Arial, sans-serif;
     font-size: 150%;
     color: #D3090C;   
+}
+
+border {
+        width: 300px;
+    border: 2px solid black;
+    background-color: lightgrey;
+}
+
+april {
+    width: 50%;
+}
+
+table.table2 {
     
+    border: 1px solid black;
+    float: left;
+    background-color:#948C85;
     
 }
 
+table.table2 {
+    width: 50%;
+}
+
+ table.center,q {
+    border: border-collapse;
+    width:70%; 
+    float: left;
+    margin-left:15%; 
+    margin-right:15%;
+  }
+  
+  q {
+     margin-left:15%; 
+    margin-right:15%;
+     float: left;
+  }
+  
+  backdrop{
+     margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+
+  }

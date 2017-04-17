@@ -1,5 +1,6 @@
 
 <header>
+    <q>
     <title>Your Restaurant Pick</title>
     <p>
         <%= link_to 'Home', welcome_index_path %> |
@@ -9,51 +10,51 @@
 </header>
 
 <p>
-    <strong>Restaurant</strong><br>
-    <%= @restaurant.name %>
-</p>
-
-<p>
-    <strong>Description</strong><br>
-    <%= @restaurant.description %>
-</p>
+    <table class=center>
+  <tr class="listing">
+    <th width=70%> <%=@restaurant.name%></th>
+    <th><%=@restaurant.location %> </th>
+  </tr>
 
 
 <p>
-    <strong>Location</strong><br>
-    <%=@restaurant.location %>
+    
+    <th class><%= @restaurant.description %></th>
+
 </p>
 
-<h2>Reviews</h2>
+</table>
+<table class=center>
+
+  <tr class = "listing">
+    <th class = "Name">Name</th><br>
+    <br><th class = "Review">Review</th>
+    <th class = "Rating">Rating</th>
+    <th class = "Edit">Edit</th>
+  </tr>
+  <h2>Reviews:</h2>
 <% @restaurant.reviews.each do |review| %>
+<tr class >
 <p>
-    <strong>Commenter:</strong>
-    <%= review.commenter %>
+  <td><%= review.commenter %></td>
+  <td><%= review.review %></td>
+  <td><%= review.rating %></td>
+  <td><%= link_to 'Edit', edit_restaurant_review_path(review) %></td>
 </p>
-
-<p>
-    <strong>Review:</strong>
-    <%= review.review %>
-</p>
-<p>
-    <strong>Rating:</strong>
-    <%= review.rating %>
-</p>
+</tr>
 <% end %>
-
-<h2>Add a review:</h2>
+</table>
+<h2 text-align: center;>Add a review:</h2>
 <%= form_for([@restaurant, @restaurant.reviews.build]) do |f| %>
 <p>
-    <%= f.label :commenter %><br>
+    <%= f.label :commenter %>
     <%= f.text_field :commenter %>
 </p>
 <p>
-    <%= f.label :rating %><br>
+    <%= f.label :review %>
+    <%= f.text_area :review %><br>
+    <%= f.label :rating %>
     <%= f.text_field :rating %>
-</p>
-<p>
-    <%= f.label :review %><br>
-    <%= f.text_area :review %>
 </p>
 <p>
     <%= f.submit %>
@@ -62,76 +63,6 @@
 
 <div id = "b2">
 <%= link_to 'Back', restaurants_path %>
+  <footer> Copyright 2017, Caupona Adventures (Group 9)
+  </footer>
 </div>
-
-<footer>
-    &copy; Copyright 2017, Caupona Adventures (Group 9)
-</footer>
-<header>
-    <title>Your Restaurant Pick</title>
-    <p>
-        <%= link_to 'Home', welcome_index_path %> |
-	    <%= link_to 'Restaurants', restaurants_path %>
-    </p>
-	<meta charset="UTF-8">
-</header>
-
-<p>
-    <strong id = "r1">Restaurant</strong><br>
-    <%= @restaurant.name %>
-</p>
-
-<p>
-    <strong id = "r2">Description</strong><br>
-    <%= @restaurant.description %>
-</p>
-
-
-<p>
-    <strong id = "r3">Location</strong><br>
-    <%=@restaurant.location %>
-</p>
-
-<h2>Reviews</h2>
-<% @restaurant.reviews.each do |review| %>
-<p>
-    <strong>Commenter:</strong>
-    <%= review.commenter %>
-</p>
-
-<p>
-    <strong>Review:</strong>
-    <%= review.review %>
-</p>
-<p>
-    <strong>Rating:</strong>
-    <%= review.rating %>
-</p>
-<% end %>
-
-<h2>Add a review:</h2>
-<%= form_for([@restaurant, @restaurant.reviews.build]) do |f| %>
-<p>
-    <%= f.label :commenter %><br>
-    <%= f.text_field :commenter %>
-</p>
-<p>
-    <%= f.label :rating %><br>
-    <%= f.text_field :rating %>
-</p>
-<p>
-    <%= f.label :review %><br>
-    <%= f.text_area :review %>
-</p>
-<p>
-    <%= f.submit %>
-</p>
-<% end %>
-
-<div id = "b2">
-<%= link_to 'Back', restaurants_path %>
-</div>
-
-<footer>
-    &copy; Copyright 2017, Caupona Adventures (Group 9)
-</footer>

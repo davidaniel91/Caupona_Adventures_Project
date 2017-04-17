@@ -1,4 +1,4 @@
-<%= form_for @review do |f| %>
+<%= form_for edit_restaurant_review_path(@review) do |f| %>
 
     <% if @review.errors.any? %>
      <div id="error_explanation">
@@ -34,3 +34,4 @@
     <%= f.submit %>
 </p>
 <% end %>
+
