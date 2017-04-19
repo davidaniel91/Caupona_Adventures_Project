@@ -20,6 +20,7 @@
 <% @review.each do |review| %>
 <tr>
     <td><%= link_to 'Edit', edit_restaurant_review_path(review) %></td>
+    <td><%= link_to 'Destroy', destroy_restaurant_review_path(review)%></td>
 </tr>
 
 <% end %>

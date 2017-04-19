@@ -11,26 +11,29 @@ class ReviewsController < ApplicationController
     
     
     def destroy
-        @review = Review.find(params[:review_id])
+        @restaurant = Restaurant.find(params[:restaurant_id])
+        @review = @restaurant.reviews.find(params[:id])
         @review.destroy
-        redirect_to restaurants_path
+        redirect_to restaurant_path(@restaurant)
     end
     
     
     
     def edit
-        @review = Review.find(params[:restaurant_id])
+        @restaurant = Restaurant.find(params[:restaurant_id])
+        @review = @restaurant.reviews.find(params[:id])
     end
     
     def update
-        @review = Review.find(params[:id])
+        @restaurant = Restaurant.find(params[:restaurant_id])
+        @review = @restaurant.reviews.find(params[:id])
         
         if @review.update(review_params)
-            redirect_to restaurant_reviews_path(@review)
+            redirect_to @restaurant
         else
             render 'edit'
         end
-    end
+    end    
     
     private
     def review_params

@@ -21,7 +21,6 @@ class RestaurantsController < ApplicationController
         end
     end
     
-  
     def edit
         @restaurant = Restaurant.find(params[:id])
     end
@@ -41,10 +40,10 @@ class RestaurantsController < ApplicationController
         @restaurant.destroy
         redirect_to restaurants_path
     end
-    
-end
 
 private
 def restaurant_params
     params.require(:restaurant).permit(:name,:description,:location)
+end
+
 end

@@ -28,3 +28,17 @@ p {
     
     
 }
+
+textarea {
+    width: 25%;
+    height: 200px;
+    padding: 12 px 12 px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    resize: auto;
+}
+
+.stay {
+    position: center;
+}

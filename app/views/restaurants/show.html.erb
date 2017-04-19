@@ -1,6 +1,6 @@
 
 <header>
-    <q>
+    <p>
     <title>Your Restaurant Pick</title>
     <p>
         <%= link_to 'Home', welcome_index_path %> |
@@ -30,7 +30,9 @@
     <th class = "Name">Name</th><br>
     <br><th class = "Review">Review</th>
     <th class = "Rating">Rating</th>
+    <th class = "Delete">Delete</th>
     <th class = "Edit">Edit</th>
+
   </tr>
   <h2>Reviews:</h2>
 <% @restaurant.reviews.each do |review| %>
@@ -39,30 +41,24 @@
   <td><%= review.commenter %></td>
   <td><%= review.review %></td>
   <td><%= review.rating %></td>
-  <td><%= link_to 'Edit', edit_restaurant_review_path(review) %></td>
+  <td><%= link_to 'Delete Review', [review.restaurant, review],
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %></td>
+  <td><%= link_to 'Edit Review', [review.restaurant, review],
+                    method: :patch %></td>
+
 </p>
 </tr>
 <% end %>
 </table>
 <h2 text-align: center;>Add a review:</h2>
-<%= form_for([@restaurant, @restaurant.reviews.build]) do |f| %>
-<p>
-    <%= f.label :commenter %>
-    <%= f.text_field :commenter %>
-</p>
-<p>
-    <%= f.label :review %>
-    <%= f.text_area :review %><br>
-    <%= f.label :rating %>
-    <%= f.text_field :rating %>
-</p>
-<p>
-    <%= f.submit %>
-</p>
-<% end %>
+<%= render 'reviews/form' %>
+
+
 
 <div id = "b2">
 <%= link_to 'Back', restaurants_path %>
+
   <footer> Copyright 2017, Caupona Adventures (Group 9)
   </footer>
 </div>

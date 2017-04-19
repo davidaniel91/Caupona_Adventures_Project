@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.listing {
+    color: #F0E68C; //#4EB12E; //#EB0104; OR #21920F; lighter green
+    font: 24px Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000
+}
+
 div.restaurant {
     //color: white;
     font: Helvetica, Arial, sans-serif;
@@ -83,20 +89,47 @@ table.table2 {
     font: "Times New Roman", Arial, sans-serif;
 }
 
-center{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    
-}
-
 textarea {
     width: 25%;
     height: 200px;
     padding: 12 px 12 px;
     border: 2px solid #ccc;
     box-sizing: border-box;
+    position: float;
     background-color: #ffffff;
-    position: center;
     resize: auto;
+}
+
+.stay {
+    position: center;
+}
+
+.error_explanation {
+    color: #FFFFFF;
+    position: absolute;
+}
+
+#margin {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 80px;
+    background-color: #000000;
+    
+}
+
+#shell {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+     border: 1px solid black;
+    background-color:#000000;
+    
+}
+
+#box2 {
+    margin-right: 50px;
+    margin-left: 50px;
 }
