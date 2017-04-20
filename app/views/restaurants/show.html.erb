@@ -4,38 +4,39 @@
     <title>Your Restaurant Pick</title>
     <p>
         <%= link_to 'Home', welcome_index_path %> |
-	    <%= link_to 'Restaurants', restaurants_path %>
+	      <%= link_to 'Restaurants', restaurants_path %>
     </p>
 	<meta charset="UTF-8">
 </header>
 
 <p>
     <table class=center>
-  <tr class="listing">
+    <tr class="listing">
     <th width=70%> <%=@restaurant.name%></th>
     <th><%=@restaurant.location %> </th>
-  </tr>
-
-
+    </tr>
 <p>
-    
     <th class><%= @restaurant.description %></th>
-
 </p>
+
+
+<h2>Restaurant</h2>
 
 </table>
 <table class=center>
 
-  <tr class = "listing">
+    <tr class = "listing">
     <th class = "Name">Name</th><br>
     <br><th class = "Review">Review</th>
     <th class = "Rating">Rating</th>
     <th class = "Delete">Delete</th>
     <th class = "Edit">Edit</th>
+    </tr>
+  
+<h2>Reviews:</h2>
 
-  </tr>
-  <h2>Reviews:</h2>
 <% @restaurant.reviews.each do |review| %>
+
 <tr class >
 <p>
   <td><%= review.commenter %></td>
@@ -46,19 +47,21 @@
                     data: { confirm: 'Are you sure?' } %></td>
   <td><%= link_to 'Edit Review', [review.restaurant, review],
                     method: :patch %></td>
-
 </p>
 </tr>
 <% end %>
 </table>
+
 <h2 text-align: center;>Add a review:</h2>
+
 <%= render 'reviews/form' %>
 
 
 
 <div id = "b2">
 <%= link_to 'Back', restaurants_path %>
-
-  <footer> Copyright 2017, Caupona Adventures (Group 9)
-  </footer>
 </div>
+
+<footer> 
+  Copyright 2017, Caupona Adventures (Group 9)
+</footer>

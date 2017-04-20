@@ -4,15 +4,20 @@
   <title>Restaurants</title>
   <meta charset="UTF-8">
 </head>
+
 <div id= "margin">
-   <div id= "shell">
+<div id= "shell">
 <h1 id = "name"><%= link_to 'Caupona Adventures', welcome_index_path %></h1><br>
+
 <h1>Listing restaurants</h1>
- <div class = "restaurant">
+
+<div class = "restaurant">
+    
  <ul>
  <li><%= link_to 'New restaurant', new_restaurant_path %></li>
  </ul>
- </div>
+ 
+</div>
 
 <table>
   <tr>
@@ -23,6 +28,7 @@
   
   
   <% @restaurants.each do |restaurant| %>
+  
     <tr class = "listing">
       <td><%= link_to restaurant.name, restaurant_path(restaurant) %></td>
       <td><%= restaurant.location %></td>
