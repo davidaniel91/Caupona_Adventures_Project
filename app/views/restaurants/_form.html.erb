@@ -1,40 +1,36 @@
 <%= form_for @restaurant do |f| %>
-
-<% if @restaurant.errors.any? %>
- <div id="error_explanation">
-   <h2>
-     <%= pluralize(@restaurant.errors.count, "error") %> prohibited
-     this review from being saved:
-   </h2>
-    <ul>
-     <% @restaurant.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-     <% end %>
-    </ul>
- </div>
-<% end %>
-
-<p>
+    <div class ="cat">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
-</p>
-
-<p class= "stay">
+    </div>
+    <div class= "cat">
     <%= f.label :location %><br>
     <%= f.text_field :location %>
-</p>
-
-<p>
+    </div>
+    <div class ="cat">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
-</p>
+    </div>
 
 <p>
     <%= f.submit %>
 </p>
 <% end %>
 
-
+<% if @restaurant.errors.any? %>
+ <div id="error_explanation">
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+     <%= pluralize(@restaurant.errors.count, "error") %> prohibited
+     this review from being saved:
+     <% @restaurant.errors.full_messages.each do |msg| %>
+      <li id= "error_explanation"><%= msg %></li>
+     <% end %>
+</div>
+</div>
+     
+<% end %>
 <div id = "b1">
 <%= link_to 'Back', restaurants_path %>
 </div>
+

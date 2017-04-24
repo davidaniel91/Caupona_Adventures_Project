@@ -9,18 +9,18 @@
 	<meta charset="UTF-8">
 </header>
 
-<p>
-    <table class=center>
-    <tr class="listing">
-    <th width=70%> <%=@restaurant.name%></th>
-    <th><%=@restaurant.location %> </th>
-    </tr>
-<p>
-    <th class><%= @restaurant.description %></th>
-</p>
-
-
+<div id= case>  
 <h2>Restaurant</h2>
+    <h1 id=center>
+    <%=@restaurant.name%> <br>
+    <%=@restaurant.location %> 
+    </h1>
+    <div id= desc>
+    <%= @restaurant.description %>
+    </div>
+
+
+
 
 </table>
 <table class=center>
@@ -61,7 +61,7 @@
 <div id = "b2">
 <%= link_to 'Back', restaurants_path %>
 </div>
-
+</div>
 <footer> 
   Copyright 2017, Caupona Adventures (Group 9)
 </footer>

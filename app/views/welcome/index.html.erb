@@ -6,20 +6,25 @@
 
 <header>
     <h2>Number 9 Large</h2>
-    <div class = "links">
-    <ul>
-	<li class = "link1"><%= link_to 'List of all Restaurants',controller: 'restaurants' %></li>
-    <li class = "link2"><%= link_to 'About us', controller: 'about'%></li>
-	</ul>
-	</div>
 </header>
-
+    <p>
+        <%= link_to 'About Us', controller: 'about' %> |
+	    <%= link_to 'Restaurants', restaurants_path %>
+    </p>
+<div id= case>
 <table align = "center" , border = "1">
   <tr>
   <th><h1 id="center">Caupona Adventures</h1></th>
   </tr>
 </table>
-
+  <!--
+    <div class = "links">
+    <ul>
+	<li class = "link1"><%= link_to 'List of all Restaurants',controller: 'restaurants' %> </li>
+	<li class = "link2"><%= link_to 'About us', controller: 'about'%></li>
+	</ul>
+	</div>
+    -->
 
 
 <p>

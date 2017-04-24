@@ -60,7 +60,7 @@ h1 {
     font: 48px Helvetica, Arial, sans-serif;
     font-family: Copperplate , Lucida Console;
     font-size: 300%;
-    color: #F0E68C;  //#B42E2E; //#00ff40; //#00ff40;
+    color: #F0E68C;  
     text-shadow: 2px 2px 4px #000000
     
 }
@@ -84,7 +84,7 @@ h1.oblique {
 h2 {
     font: 48px Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #F0E68C; //#730D76; //#4EB12E green #21920F; lighter green OR #730D76 -> purple
+    color: #F0E68C; 
     text-shadow: 2px 2px 4px #000000
 }
 
@@ -95,21 +95,21 @@ h2.oblique{
 footer {
     padding-top: 10px;
     position:absolute; 
-    color: #F0FFFF;//#A9A9A9 -> grey OR -> white
+    color: #F0FFFF;
     bottom:0;
     right:0;
     font: "Times New Roman", Arial, sans-serif;
 }
 
 .restaurant {
-    color: #F0E68C; //#4EB12E; //#EB0104; OR #21920F; lighter green
+    color: #F0E68C;
     font: 32px Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #000000
     
 }
 
 .review {
-    color: #00000; //#4EB12E; //#EB0104; OR #21920F; lighter green
+    color: #00000; 
     font: 12px Helvetica, Arial, sans-serif;
     text-shadow: 1px 1px 2px #000000
 }
@@ -160,6 +160,7 @@ p {
     font: 32px Helvetica, Arial, sans-serif;
     font-size: 150%;
     color: #F0E68C;
+    position: center;
     text-align: center;
     text-shadow: 1px 1px 3px #000000
 }
@@ -199,5 +200,5 @@ input[type=button], input[type=submit]:hover {
 }
 
 a:visited {
-    color:#FFFFFF ;
+    color:#ffffe6 ;
 }

@@ -38,11 +38,7 @@ th {
     height: 50px;
 }
 
-p {
-    font: 32px Helvetica, Arial, sans-serif;
-    font-size: 150%;
-    color: #D3090C;   
-}
+
 
 border {
     width: 300px;
@@ -107,36 +103,91 @@ textarea {
     resize: auto;
 }
 
-.stay {
-    position: center;
-}
-
-.error_explanation {
-    color: #FFFFFF;
-    position: absolute;
-}
-
-#margin {
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-right: 100px;
-    margin-left: 80px;
-    background-color: #000000;
-    border: 1px solid #FFFFFF;
+#error_explanation {
+    font: 10px Helvetica, Arial, sans-serif;
+    font-size: 90%;
+    color: #000000;   
+    
 }
 
 #shell {
-   
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color:#FFFFFF;
+    position: center;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000000;
+    border: 20px solid #FFFFFF;
+    width: 1250px;
+    height: 100%;
+    padding:60px;
+    
 }
 
-#margin2{
-    margin-bottom: 100px;
-    margin-right: 100px;
-    margin-left: 80px;
+#case {
+    position: center;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #000000;
-    border: 1px solid #FFFFFF;
+    border: 20px solid #FFFFFF;
+    width: 1250px;
+    height: 100%;
+    padding:20px;
+    background-opacity: 70%;
+    
+}
+
+ 
+ .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.cat{
+    font: 32px Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #F0E68C;
+    position: center;
+    text-align: center;
+    text-shadow: 1px 1px 3px #000000
+}
+
+.restaurantbox{
+    position: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    border: 20px solid #FFFFFF;
+    width: 80%;
+    height: 100%;
+    padding:20px;
+    background-opacity: 70%;
+    
+}
+
+.desc{
+ position: center;
+ margin-right: auto;
+ margin-left: auto;
+ background #FFFFFF;
+ border: 1px solid #FFFFFF;
+ width: 80%;
+ height: 100%;
+ color: #F0E68C;
 }
