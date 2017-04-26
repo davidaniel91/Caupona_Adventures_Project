@@ -1,28 +1,14 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// * {
-//     border: 1px solid black;
-//     margin: 5px;
-// }
 
 body {
     //background-image: url("https://static.pexels.com/photos/213661/pexels-photo-213661.jpeg");
     //background-size: cover;
     //Another possible cover: 
     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
-    background-color: #A9A9A9; //#00ff40; //#FF69B4
+    background-color: #A9A9A9; 
 }
-
-// #boxTest {
-//     width: 300px;
-//     border: 25px solid green;
-//     padding: 25px;
-//     margin: 25px;
-//     position: center;
-//     color: #F0E68C;       
-// }
-
 
 img{
     position: center;
@@ -168,6 +154,7 @@ iframe {
 }
 
 
+//Buttons for Create and Update
 input[type=text] {
     width: 25%;
     padding: 12 px 12 px;

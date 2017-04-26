@@ -136,6 +136,7 @@ textarea {
     color: black;
 }
 
+//
 .cat{
     font: 32px Helvetica, Arial, sans-serif;
     font-size: 150%;
@@ -156,6 +157,8 @@ textarea {
     padding:20px;
     
 }
+
+
 
 #desc{
  position: center;
@@ -181,9 +184,35 @@ textarea {
     color: hotpink;
 }
   .button {
-    background-color: black;
-    color: black;
-    border: 2px solid  #F0E68C;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #F0E68C;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 3px 1px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    cursor: pointer;
 }
+
+//button for the restaurant listing page
+.button4 {
+    background-color: black;
+    color: #F0E68C;
+    border: 4px solid #000000;
+}
+.button4:hover {
+    background-color: #000000;
+    color:#FFFFFF;
+}
+
+
+.button {
+    background-color: white;
+    color: #F0E68C;
+    border: 4px solid #FFFFFF;
+}
+
