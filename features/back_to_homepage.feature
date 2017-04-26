@@ -8,10 +8,7 @@ Scenario: As a reviewer I want to be able to navigate from the homepage to the n
   Given I am on the home page
   When I click on the "Restaurants" link
   Then I should be on the "Caupona Adventures" page
-  When I click on the "New restaurant" link
-  Then I should be on the "New Restaurant" page
-  And I should see the "Name" field
-  And I should see the "Location" field
-  And I should see the "Description" field
-  
+  When I click on the "Caupona Adventures" link
+  Then I should be on the "Caupona Adventures" page
+ 
   

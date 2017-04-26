@@ -18,36 +18,36 @@ h2 {
 
 div.restaurant {
     //color: white;
-    font: Helvetica, Arial, sans-serif;
+    font: sans-serif , Helvetica, Arial;
     font-size: 150%;
-    color: #FF69B4; //#4EB12E; //#B42E2E; 
+    color: #F0E68C;  //#FF69B4; //#4EB12E; //#B42E2E; 
     //text-align: center;
+    background-image:url("black.png");
     text-shadow: 1px 1px 2px #000000
 }
 
 table,th,td {
     border: 1px solid black;
-    background-color:#948C85;
+    background-color: #505050;
+    color: #F0E68C;
 }
+
 
 table {
     width: 100%;
 }
 
+td {
+    
+}
 th {
     height: 50px;
 }
-
-
 
 border {
     width: 300px;
     border: 2px solid black;
     background-color: lightgrey;
-}
-
-april {
-    width: 50%;
 }
 
 table.table2 {
@@ -75,18 +75,11 @@ q {
      margin-right:15%;
      float: left;
 }
-  
-backdrop{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;
-}
 
 footer {
     padding-top: 10px;
     position:absolute; 
-    color: #F0FFFF;//#A9A9A9 -> grey OR -> white
+    color: #F0E68C;  //#F0FFFF;//#A9A9A9 -> grey
     bottom:0;
     right:0;
     font: "Times New Roman", Arial, sans-serif;
@@ -110,34 +103,18 @@ textarea {
     
 }
 
-#shell {
-    position: center;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #000000;
-    border: 20px solid #FFFFFF;
-    width: 1250px;
-    height: 100%;
-    padding:60px;
-    
-}
-
 #case {
     position: center;
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #000000;
+    background-image: url("Black.png");
     border: 20px solid #FFFFFF;
     width: 1250px;
     height: 100%;
     padding:20px;
-    background-opacity: 70%;
-    
 }
 
- 
  .alert {
     padding: 20px;
     background-color: #f44336;
@@ -172,22 +149,41 @@ textarea {
     position: center;
     margin-right: auto;
     margin-left: auto;
-    background-color: #FFFFFF;
+    background-image: url("black.png");
     border: 20px solid #FFFFFF;
     width: 80%;
     height: 100%;
     padding:20px;
-    background-opacity: 70%;
     
 }
 
-.desc{
+#desc{
  position: center;
  margin-right: auto;
  margin-left: auto;
- background #FFFFFF;
+ background-color: #000000;
  border: 1px solid #FFFFFF;
- width: 80%;
+ width: 50%;
  height: 100%;
  color: #F0E68C;
+ font-size: 150%;
+}
+
+#location{
+    font-size: 75%;
+}
+
+#b2 a:hover {
+    color: hotpink;
+}
+
+#b1 a:hover {
+    color: hotpink;
+}
+  .button {
+    background-color: black;
+    color: black;
+    border: 2px solid  #F0E68C;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }

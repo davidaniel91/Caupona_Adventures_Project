@@ -2,22 +2,23 @@
   <title>Restaurants</title>
   <meta charset="UTF-8">
 </head>
-<div id= "shell">
-<h1 id = "name"><%= link_to 'Caupona Adventures', welcome_index_path %></h1><br>
 
-<h1>Listing restaurants</h1>
+ 
+<div id= "shell">
+
+<h1 id = "name"><%= link_to 'Caupona Adventures', welcome_index_path %></h1><br>
 
 <div class = "restaurant">
     
- <ul>
- <li><%= link_to 'New restaurant', new_restaurant_path %></li>
- </ul>
- 
-<table>
+
+ <a href=restaurants/new class="button">New restaurant</a>
+
+<table width="100%" valign="top">
   <tr>
     <th class = "restaurant">Restaurant</th><br>
     <br><th class = "restaurant">Location</th>
     <th class = "restaurant">Description</th>
+    <th colspan="2">Actions</th>
   </tr>
   
   
@@ -34,12 +35,13 @@
   <% end %>
 </table>
 </div>
-<div>
+<div id=b2>
 <%= link_to 'Back', welcome_index_path %>
 </div>
+</div>
 
-
-<footer>
+<div>
+  <footer>
     &copy; Copyright 2017, Caupona Adventures (Group 9)
 </footer>
 </div>

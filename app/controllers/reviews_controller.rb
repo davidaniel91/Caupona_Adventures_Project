@@ -6,7 +6,8 @@ class ReviewsController < ApplicationController
         @restaurant = Restaurant.find(params[:restaurant_id])
         @review = @restaurant.reviews.create(review_params)
         redirect_to restaurant_path(@restaurant)
-       
+        
+        
     end
     
     
@@ -17,11 +18,13 @@ class ReviewsController < ApplicationController
         redirect_to restaurant_path(@restaurant)
     end
     
-    
+    #def show
+    #     @review = Reviews.find(params[:id])
+    # end
     
     def edit
         @restaurant = Restaurant.find(params[:restaurant_id])
-        @review = @restaurant.reviews.find(params[:id])
+        @review=Review.find(params[:id])
     end
     
     def update
@@ -29,7 +32,7 @@ class ReviewsController < ApplicationController
         @review = @restaurant.reviews.find(params[:id])
         
         if @review.update(review_params)
-            redirect_to @restaurant
+            redirect_to restaurant_path(@restaurant)
         else
             render 'edit'
         end
@@ -39,4 +42,10 @@ class ReviewsController < ApplicationController
     def review_params
         params.require(:review).permit(:commenter, :review, :rating)
     end
+    
+    # private 
+    # def new_review_params
+    #     params.require(:review).permit(:commenter, :review, :rating)
+    # end
+    
 end

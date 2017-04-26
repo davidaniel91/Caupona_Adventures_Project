@@ -42,7 +42,7 @@ h1 a:link {
 }
 
 h1 a:visited {
-    color: blue;
+    color: white;
 }
 
 h1 a:hover {
@@ -94,8 +94,8 @@ h2.oblique{
 
 footer {
     padding-top: 10px;
-    position:absolute; 
-    color: #F0FFFF;
+    position:relative; 
+    color: #F0E68C;  //#F0FFFF;
     bottom:0;
     right:0;
     font: "Times New Roman", Arial, sans-serif;
@@ -120,39 +120,31 @@ footer {
     text-shadow: 2px 2px 4px #000000
 }
 
-.link a:hover {
-    color: hotpink;
-}
-
-.link1 a:hover {
-    color: hotpink;
-}
-
-.link2 a:hover {
-    color: hotpink;
-}
-
 //second page
 
 
 #b1 a {
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #F0E68C; //green
+    color: hotpink;
     text-shadow: 2px 2px 4px #000000
+}
+
+#b2 {
+    margin-top: 10px;
 }
 
 #b2 a {
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #00F80D;
+    color: hotpink;
     text-shadow: 2px 2px 4px #000000
 }
 
 #b3 a {
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #00F80D;
+    color: hotpink;
     text-shadow: 2px 2px 4px #000000
 }
 
@@ -162,7 +154,12 @@ p {
     color: #F0E68C;
     position: center;
     text-align: center;
-    text-shadow: 1px 1px 3px #000000
+     text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    
 }
 
 iframe {
