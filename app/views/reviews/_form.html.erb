@@ -8,7 +8,14 @@
     <%= f.text_field :rating %><br>
     <%= f.label :review %><br>
     <%= f.text_area :review %>
-
+    
+    <div id = "reviewParameters">
+    <ul>
+        <li>Commenter Field cannot be empty</li>
+        <li>Rating must be between 1 and 5</li>
+        <li>Review has a minimum requirement of 25 characters</li>
+    </ul>    
+    </div>
 </p>
 
 <p>

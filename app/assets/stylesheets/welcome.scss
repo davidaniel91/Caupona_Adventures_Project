@@ -10,6 +10,7 @@ body {
     background-color: #A9A9A9; 
 }
 
+//used for the sample image
 img{
     position: center;
     height: auto;
@@ -18,25 +19,20 @@ img{
     max-height: 300px;
 }
 
+//used for links
 a{
     text-decoration: none;
-    color: hotpink;
+    color: #ffffe6;
 }
 
-h1 a:link {
-    color: red;
-}
-
+//links that have been visited
 h1 a:visited {
-    color: white;
+    color: #ffffe6;
 }
 
+//hovering over h1 links specifically "Caupona Adventures" on restaurant index
 h1 a:hover {
     color: hotpink;
-}
-
-h1 a:active {
-    color: blue;
 }
 
 
@@ -51,21 +47,6 @@ h1 {
     
 }
 
-center{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-h1.solid{
-    border-style: solid;
-    color: #B42E2E;
-}
-
-h1.oblique {
-    font-style: oblique;
-}
-
 
 h2 {
     font: 48px Helvetica, Arial, sans-serif;
@@ -74,10 +55,7 @@ h2 {
     text-shadow: 2px 2px 4px #000000
 }
 
-h2.oblique{
-    font-style: oblique;
-}
-
+//for the copyright
 footer {
     padding-top: 10px;
     position:relative; 
@@ -87,6 +65,7 @@ footer {
     font: "Times New Roman", Arial, sans-serif;
 }
 
+//used in the restaurant index specifically the top table fonts
 .restaurant {
     color: #F0E68C;
     font: 32px Helvetica, Arial, sans-serif;
@@ -94,46 +73,24 @@ footer {
     
 }
 
-.review {
-    color: #00000; 
-    font: 12px Helvetica, Arial, sans-serif;
-    text-shadow: 1px 1px 2px #000000
-}
 
-.links {
-    color: #F0E68C;
-    font: 32px Helvetica, Arial, sans-serif;
-    text-shadow: 2px 2px 4px #000000
-}
-
-//second page
-
-
-#b1 a {
-    font: Helvetica, Arial, sans-serif;
-    font-size: 150%;
-    color: hotpink;
-    text-shadow: 2px 2px 4px #000000
-}
-
+//makes the back link lower
 #b2 {
     margin-top: 10px;
+    color: #ffffe6;
+    
 }
 
-#b2 a {
+//back link color
+#b2 a{
     font: Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: hotpink;
+    color: #ffffe6;
     text-shadow: 2px 2px 4px #000000
 }
 
-#b3 a {
-    font: Helvetica, Arial, sans-serif;
-    font-size: 150%;
-    color: hotpink;
-    text-shadow: 2px 2px 4px #000000
-}
 
+//used for a lot of text 
 p {
     font: 32px Helvetica, Arial, sans-serif;
     font-size: 150%;
@@ -147,12 +104,6 @@ p {
     1px 1px 0 #000;  
     
 }
-
-iframe {
-    padding: 50px;
-    padding-top: 25px;
-}
-
 
 //Buttons for Create and Update
 input[type=text] {
@@ -179,10 +130,14 @@ input[type=button], input[type=submit]:hover {
     background-color: #008CBA;
     color: white;
 }
-#center {
-    text-align: center;
-}
 
+//color of links that have been visited
 a:visited {
     color:#ffffe6 ;
 }
+
+//color of links when you hover over them
+ a:hover {
+    color: hotpink;
+}
+ 

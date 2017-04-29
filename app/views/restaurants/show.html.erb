@@ -5,10 +5,11 @@
         <%= link_to 'Home', welcome_index_path %> |
 	      <%= link_to 'Restaurants', restaurants_path %>
     </p>
-    <h1 id=center>
+    <h1>
     <%=@restaurant.name%> <br>
+    <h3>
     <%=@restaurant.location %> 
-    </h1>
+    </h3>
     <div id= desc>
     <%= @restaurant.description %>
     </div>

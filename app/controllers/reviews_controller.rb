@@ -2,12 +2,15 @@ class ReviewsController < ApplicationController
     def index
         @reviews = Review.all
     end
+    
     def create
         @restaurant = Restaurant.find(params[:restaurant_id])
         @review = @restaurant.reviews.create(review_params)
         redirect_to restaurant_path(@restaurant)
-        
-        
+    end
+    
+    def new
+      @review = @restaurant.review.build
     end
     
     
@@ -17,10 +20,6 @@ class ReviewsController < ApplicationController
         @review.destroy
         redirect_to restaurant_path(@restaurant)
     end
-    
-    #def show
-    #     @review = Reviews.find(params[:id])
-    # end
     
     def edit
         @restaurant = Restaurant.find(params[:restaurant_id])
@@ -42,10 +41,4 @@ class ReviewsController < ApplicationController
     def review_params
         params.require(:review).permit(:commenter, :review, :rating)
     end
-    
-    # private 
-    # def new_review_params
-    #     params.require(:review).permit(:commenter, :review, :rating)
-    # end
-    
 end

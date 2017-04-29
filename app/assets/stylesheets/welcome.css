@@ -1,0 +1,93 @@
+body {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4b/bb/a6/4bbba62afa2b6f4bda09b7ec99d3ba87.jpg");
+  background-color: #A9A9A9; }
+
+img {
+  position: center;
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px; }
+
+a {
+  text-decoration: none;
+  color: #ffffe6; }
+
+h1 a:visited {
+  color: #ffffe6; }
+
+h1 a:hover {
+  color: hotpink; }
+
+h1 {
+  font: 48px Helvetica, Arial, sans-serif;
+  font-family: Copperplate , Lucida Console;
+  font-size: 300%;
+  color: #F0E68C;
+  text-shadow: 2px 2px 4px #000000; }
+
+h2 {
+  font: 48px Helvetica, Arial, sans-serif;
+  font-size: 150%;
+  color: #F0E68C;
+  text-shadow: 2px 2px 4px #000000; }
+
+footer {
+  padding-top: 10px;
+  position: relative;
+  color: #F0E68C;
+  bottom: 0;
+  right: 0;
+  font: "Times New Roman", Arial, sans-serif; }
+
+.restaurant {
+  color: #F0E68C;
+  font: 32px Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px 4px #000000; }
+
+#b2 {
+  margin-top: 10px; }
+
+#b2 a {
+  font: Helvetica, Arial, sans-serif;
+  font-size: 150%;
+  color: hotpink;
+  text-shadow: 2px 2px 4px #000000; }
+
+p {
+  font: 32px Helvetica, Arial, sans-serif;
+  font-size: 150%;
+  color: #F0E68C;
+  position: center;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+input[type=text] {
+  width: 25%;
+  padding: 12 px 12 px;
+  border: 2px solid #ccc;
+  background-color: #ffffff; }
+
+input[type=button], input[type=submit] {
+  background-color: white;
+  border: 2px solid #008CBA;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer; }
+
+input[type=button], input[type=submit]:hover {
+  background-color: #008CBA;
+  color: white; }
+
+a:visited {
+  color: #ffffe6; }
+
+a:hover {
+  color: hotpink; }
+
+/*# sourceMappingURL=welcome.css.map */

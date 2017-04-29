@@ -9,26 +9,7 @@ body {
     background-color: #A9A9A9; //#00ff40; //#FF69B4
 }
 
-h1 {
-    font: 48px Helvetica, Arial, sans-serif;
-    font-family: Copperplate , Lucida Console;
-    font-size: 300%;
-    color:  #F0E68C;  //#00ff40; //#00ff40;
-    text-shadow: 2px 2px 4px #000000
-}
-
-.name1{
-    font: 32px Helvetica, Arial, sans-serif;
-    font-family: Copperplate , Lucida Console;
-    font-size: 100%;
-    color: #F0E68C;
-    text-shadow: 2px 2px 4px #000000
-}
-
-h1 a:hover {
-    color: hotpink;
-}
-
+//Number 9 large 
 h3 {
     font: 42px Helvetica, Arial, sans-serif;
     font-family: Copperplate , Lucida Console;
@@ -37,46 +18,26 @@ h3 {
     text-shadow: 2px 2px 4px #000000
 }
 
-title{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    
-}
-
+//The about text
 .about {
     color: #F0E68C; 
     font: 16px Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #000000 
 }
 
-.link{
-    color: #F0E68C; 
-    font: 16px Helvetica, Arial, sans-serif;
-    text-shadow: 2px 2px 4px #000000 
-}
-
+//makes links pink when hover
  .link a:hover {
     color: hotpink;
 }
 
-
-footer {
-    padding-top: 10px;
-    position:absolute; 
-    color: #F0FFFF;//#A9A9A9 -> grey OR -> white
-    bottom:0;
-    right:0;
-    font: "Times New Roman", Arial, sans-serif;
-}
-
+//used as a box on the restaurant index,about index, restaurant new,
 #shell {
     position: center;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     background-image:url("Black.png");
-    border: 20px solid #FFFFFF;
+    border: 20px solid rgba(255, 255, 255, .3);
     width: 1250px;
     height: 100%;
     padding:60px;
