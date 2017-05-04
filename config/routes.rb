@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :places
   get 'about/index'
 
   get 'reviews/index'
