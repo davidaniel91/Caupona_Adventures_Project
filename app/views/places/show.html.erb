@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<div id= "shell">
+
 <p>
   <strong>Name:</strong><br>
   <%= @place.name %>
@@ -10,5 +12,8 @@
   <%= image_tag @place.image.url %>
 </p>
 
-<%= link_to 'Edit', edit_place_path(@place) %> |
+<div id = "b2">
+<%= link_to 'Edit', edit_place_path(@place) %> ||
 <%= link_to 'Back', places_path %>
+</div>
+</div>
