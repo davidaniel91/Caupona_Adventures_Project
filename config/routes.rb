@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  resources :places
+  resources :places # Resources needed to be updated for place/images
   get 'about/index'
 
   get 'reviews/index'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'welcome/index'
   resources :restaurants do
     resources :reviews
