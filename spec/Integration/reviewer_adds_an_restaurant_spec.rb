@@ -3,8 +3,8 @@ require 'rails_helper.rb'
 feature "Reviewer adds an restaurant" do 
     scenario "Reviewer successfuly navigates to the new restaurant page from the listing restaurants page" do
     visit restaurants_path
-    expect(page).to have_content("Listing restaurants")
-    click_link "New restaurant"
+    #expect(page).to have_content("Listing restaurants")
+    click_link "Add a New Restaurant"
     expect(page).to have_content("New Restaurant")
     expect(page).to have_field("Name")
     expect(page).to have_field("Location")
