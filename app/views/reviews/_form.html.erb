@@ -1,5 +1,12 @@
 <%= form_for([@restaurant, @restaurant.reviews.build]) do |f| %>
 
+     <p>
+      The review must fill these requirements to be saved:
+      <p id=error>Commenter Field cannot be empty <br>
+      Rating must be between 1 and 5<br>
+      Review has a minimum requirement of 25 characters</p>
+</p>
+       
     
 <p>
     <%= f.label :commenter %><br>
@@ -10,16 +17,7 @@
     <%= f.text_area :review %>
     
     
-     <div id="error_explanation">
-    <div class="alert">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-      The review must fill these requirements to be saved:
-      <li id="error_explanation">Commenter Field cannot be empty</li>
-      <li id="error_explanation">Rating must be between 1 and 5</li>
-      <li id="error_explanation">Review has a minimum requirement of 25 characters</li>
-</div>
-</div>
-       
+
 <p>
     <%= f.submit %>
 </p>
